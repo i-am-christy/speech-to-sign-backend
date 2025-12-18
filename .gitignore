@@ -1,0 +1,30 @@
+# --- Python & Cache ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+#Virtual Environments
+venv/
+env/
+.env/
+.venv/
+.nsl-project/
+
+#Large Model Files 
+*.ckpt
+*.pt
+*.pth
+*.bin
+models/*.ckpt
+models/*.pt
+
+#Temporary Files (Created during audio processing)
+temp_*
+*.wav
+*.mp3
+
+#IDE & System
+.vscode/
+.idea/
+.DS_Store

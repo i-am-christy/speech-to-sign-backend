@@ -1,0 +1,26 @@
+data:
+  data_path: /kaggle/working/assets/How2Sign
+  src: text
+  train: /kaggle/working/assets/How2Sign/train
+  trg: skels
+decoder:
+  embeddings:
+    dropout: 0.1
+    embedding_dim: 256
+    scale: false
+encoder:
+  embeddings:
+    dropout: 0.1
+    embedding_dim: 256
+    scale: false
+model:
+  hidden_size: 256
+  input_size: 411
+  model_dir: /kaggle/working/assets/experiments/h2s_model
+  src_size: 4000
+name: h2s_base
+training:
+  batch_size: 16
+  epochs: 60
+  learning_rate: 0.001
+  random_seed: 42
